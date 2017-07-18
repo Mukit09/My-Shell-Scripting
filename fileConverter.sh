@@ -15,6 +15,3 @@ do
 		mv "$tmpFileName" ${tmpFileName//.vtt/.srt} ; 
 	fi
 done
-
-
-
