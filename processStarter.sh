@@ -4,7 +4,7 @@ process_number=`ps | grep $process_name | grep -v grep | wc -l`
 PROCESS_NEEDED="1"
 if [ "$process_number" != "$PROCESS_NEEDED" ];
 then
-    killall -9 dnrd
+    killall -9 $process_name
     sleep 3
     **Restart Your Process Here**
     echo "RESTARTED FROM SCRIPT!"
